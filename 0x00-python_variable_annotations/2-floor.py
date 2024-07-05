@@ -5,6 +5,7 @@ This module provides a function to get the floor value of a float.
 
 import math
 
+
 def floor(n: float) -> int:
     """
     Return the floor value of a float.
