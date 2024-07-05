@@ -3,11 +3,10 @@
 This module provides a function to zoom in on an array by repeating its
 elements.
 """
+from typing import List, Tuple
 
-from typing import Tuple, List
 
-
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
     Zoom in on an array by repeating its elements.
 
@@ -19,9 +18,9 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
     Returns:
         List[int]: The zoomed-in array as a list of integers.
     """
-    zoomed_in: List[int] = [
+    zoomed_in: List = [
         item for item in lst
-        for _ in range(factor)
+        for i in range(factor)
     ]
     return zoomed_in
 
