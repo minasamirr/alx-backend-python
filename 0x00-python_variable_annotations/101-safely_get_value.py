@@ -2,14 +2,14 @@
 """
 This module provides a function to safely get a value from a dictionary.
 """
-
 from typing import Mapping, Any, Union, TypeVar
 
 T = TypeVar('T')
+Res = Union[Any, T]
+Def = Union[T, None]
 
 
-def safely_get_value(dct: Mapping[Any, Any], key: Any,
-                     default: Union[T, None] = None) -> Union[Any, T]:
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     """
     Safely get a value from a dictionary.
 
