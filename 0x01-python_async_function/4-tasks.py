@@ -6,7 +6,8 @@ task_wait_random = __import__('3-tasks').task_wait_random
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
-    Spawn task_wait_random n times with the specified max_delay and return the list of delays in ascending order.
+    Spawn task_wait_random n times with the specified max_delay and return
+    the list of delays in ascending order.
 
     Args:
         n (int): Number of times to spawn task_wait_random.
