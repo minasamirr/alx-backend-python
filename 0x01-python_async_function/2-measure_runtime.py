@@ -3,7 +3,7 @@
 This module contains a function to measure the execution time of
 asynchronous coroutines.
 
-The main function, `measure_time`, measures the total execution time for the 
+The main function, `measure_time`, measures the total execution time for the
 `wait_n` coroutine and returns the average time per coroutine.
 """
 import time
