@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+"""
+This module contains a function to measure the execution time of
+asynchronous coroutines.
+
+The main function, `measure_time`, measures the total execution time for the 
+`wait_n` coroutine and returns the average time per coroutine.
+"""
 import time
 import asyncio
 wait_n = __import__('1-concurrent_coroutines').wait_n

@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+"""
+This module contains a function to create an asyncio.Task for the wait_random
+coroutine.
+
+The main function, `task_wait_random`, creates an asyncio.Task for the
+wait_random coroutine with a specified maximum delay.
+"""
 import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 

@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+"""
+This module contains an asynchronous coroutine that spawns multiple
+wait_random coroutines.
+
+The main coroutine, `wait_n`, spawns the `wait_random` coroutine `n`
+times with a specified maximum delay and returns the list of delays
+in ascending order.
+"""
 import asyncio
 from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
